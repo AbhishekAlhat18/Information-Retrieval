@@ -96,6 +96,7 @@ for professor_data in faculty_list:
     print("Web:", professor_data["web"])
     print()
 
+# save professors’ data to MongoDB collection professors.
 result = professors_collection.insert_many(faculty_list)
 
 print("All Professor data Stored successfully in db")
